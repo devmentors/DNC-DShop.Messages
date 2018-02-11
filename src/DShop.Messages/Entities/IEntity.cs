@@ -4,6 +4,8 @@ namespace DShop.Messages.Entities
 {
     public interface IEntity
     {
-         Guid Id { get; set; }
+         Guid Id { get; }
+         DateTime CreatedDate { get; }
+         DateTime UpdatedDate { get; }
     }
 }
