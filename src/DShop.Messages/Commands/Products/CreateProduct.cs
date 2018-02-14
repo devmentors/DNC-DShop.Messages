@@ -7,7 +7,7 @@ namespace DShop.Messages.Commands.Products
 	{
         public Guid Id { get; }
         public string Name { get; }
-        public string Descirption { get; }
+        public string Description { get; }
         public string Vendor { get; }
         public decimal Price { get; }
         
@@ -16,7 +16,7 @@ namespace DShop.Messages.Commands.Products
         {
             Id = id ?? Guid.NewGuid();
             Name = name;
-            Descirption = description;
+            Description = description;
             Vendor = vendor;
             Price = price;
         }

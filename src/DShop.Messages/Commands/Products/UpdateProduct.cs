@@ -6,7 +6,7 @@ namespace DShop.Messages.Commands.Products
 	{
         public Guid Id { get; }
         public string Name { get; }
-        public string Descirption { get; }
+        public string Description { get; }
         public decimal Price { get; }
 	}
 }
