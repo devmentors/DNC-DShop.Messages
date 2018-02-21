@@ -12,7 +12,7 @@ namespace DShop.Messages.Commands.Products
         public decimal Price { get; }
         
         [JsonConstructor]
-        private CreateProduct(Guid? id, string name, string description, string vendor, decimal price)
+        public CreateProduct(Guid? id, string name, string description, string vendor, decimal price)
         {
             Id = id ?? Guid.NewGuid();
             Name = name;
