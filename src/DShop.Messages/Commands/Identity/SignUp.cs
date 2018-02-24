@@ -1,3 +1,5 @@
+using Newtonsoft.Json;
+
 namespace DShop.Messages.Commands.Identity
 {
     public class SignUp
@@ -5,12 +7,11 @@ namespace DShop.Messages.Commands.Identity
         public string Email { get; }
         public string Password { get; }
 
-        protected SignUp()
-        {
-        }
-
+        [JsonConstructor]
         public SignUp(string email, string password)
         {
+            Email = email;
+            Password = password;
         }
     }
 }

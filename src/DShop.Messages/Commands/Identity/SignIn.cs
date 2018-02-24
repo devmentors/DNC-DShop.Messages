@@ -10,6 +10,8 @@ namespace DShop.Messages.Commands.Identity
         [JsonConstructor]
         public SignIn(string email, string password)
         {
+            Email = email;
+            Password = password;
         }
     }
 }
