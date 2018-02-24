@@ -2,7 +2,7 @@ using System;
 
 namespace DShop.Messages.Entities
 {
-    public abstract class BaseEntity : IEntity
+    public abstract class BaseEntity : IIdentifiable
     {
         public Guid Id { get; protected set; }
         public DateTime CreatedDate { get; protected set; } 
