@@ -3,7 +3,7 @@ using System;
 
 namespace DShop.Messages.Commands.Orders
 {
-    public class CancelOrder
+    public class CancelOrder : ICommand
     {
         public Guid Id { get; }
 
