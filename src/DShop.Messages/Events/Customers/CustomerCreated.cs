@@ -1,4 +1,5 @@
 using System;
+using Newtonsoft.Json;
 
 namespace DShop.Messages.Events.Customers
 {
@@ -7,6 +8,11 @@ namespace DShop.Messages.Events.Customers
         public Guid RequestId { get; } 
         public Guid UserId { get;  }
 
+        protected CustomerCreated()
+        {           
+        }    
+        
+        [JsonConstructor]
         public CustomerCreated(Guid requestId, Guid userId)
         {
             RequestId = requestId;
