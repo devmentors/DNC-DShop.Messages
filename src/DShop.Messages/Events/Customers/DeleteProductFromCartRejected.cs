@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 
 namespace DShop.Messages.Events.Customers
 {
-    public class DeleteProductFromCartRejected
+    public class DeleteProductFromCartRejected : IRejectedEvent
     {
         public Guid UserId { get; }
         public Guid ProductId { get; }

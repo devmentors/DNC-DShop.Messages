@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 
 namespace DShop.Messages.Commands.Customers
 {
-    public class CreateCustomer
+    public class CreateCustomer : ICommand
     {
         public Guid UserId { get; }
         public string FirstName { get; }
