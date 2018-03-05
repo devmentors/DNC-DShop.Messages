@@ -1,16 +1,16 @@
 using System;
 using Newtonsoft.Json;
 
-namespace DShop.Messages.Events.Identity
+namespace DShop.Messages.Events.Customers
 {
-    public class SignUpRejected : IRejectedEvent
+    public class CreateCustomerRejected : IRejectedEvent
     {
         public Guid UserId { get; }
         public string Reason { get; }
         public string Code { get; }
 
         [JsonConstructor]
-        public SignUpRejected(Guid userId, string reason, string code)
+        public CreateCustomerRejected(Guid userId, string reason, string code)
         {
             UserId = userId;
             Reason = reason;
