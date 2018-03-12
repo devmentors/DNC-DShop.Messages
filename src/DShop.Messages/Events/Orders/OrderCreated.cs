@@ -1,17 +1,16 @@
 ﻿using System;
+using Newtonsoft.Json;
 
 namespace DShop.Messages.Events.Orders
 {
     public class OrderCreated : IEvent
     {
-        public Guid RequestId { get; }
+        public Guid Id { get; }
 
-        public Guid UserId { get; }
-
-        public OrderCreated(Guid requestId, Guid userId)
+        [JsonConstructor]
+        public OrderCreated(Guid id)
         {
-            RequestId = requestId;
-            UserId = userId;
+            Id = id;
         }
     }
 }
