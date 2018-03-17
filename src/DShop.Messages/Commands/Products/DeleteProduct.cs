@@ -8,7 +8,7 @@ namespace DShop.Messages.Commands.Products
         public Guid Id { get; }
 
         [JsonConstructor]
-        private DeleteProduct(Guid id)
+        public DeleteProduct(Guid id)
         {
             Id = id;
         }
