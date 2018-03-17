@@ -11,9 +11,9 @@ namespace DShop.Messages.Commands.Products
         public decimal Price { get; }
 
         [JsonConstructor]
-        public UpdateProduct(Guid? id, string name, string description, string vendor, decimal price)
+        public UpdateProduct(Guid id, string name, string description, string vendor, decimal price)
         {
-            Id = id ?? Guid.NewGuid();
+            Id = id;
             Name = name;
             Description = description;
             Price = price;
