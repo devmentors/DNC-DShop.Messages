@@ -5,14 +5,14 @@ namespace DShop.Messages.Events.Customers
 {
     public class CreateCustomerRejected : IRejectedEvent
     {
-        public Guid UserId { get; }
+        public Guid Id { get; }
         public string Reason { get; }
         public string Code { get; }
 
         [JsonConstructor]
-        public CreateCustomerRejected(Guid userId, string reason, string code)
+        public CreateCustomerRejected(Guid id, string reason, string code)
         {
-            UserId = userId;
+            Id = id;
             Reason = reason;
             Code = code;
         }

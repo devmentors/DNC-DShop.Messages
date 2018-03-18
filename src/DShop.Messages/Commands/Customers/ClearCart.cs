@@ -5,12 +5,12 @@ namespace DShop.Messages.Commands.Customers
 {
     public class ClearCart : ICommand
     {
-        public Guid UserId { get; }
+        public Guid CustomerId { get; }
 
         [JsonConstructor]
-        public ClearCart(Guid userId)
+        public ClearCart(Guid customerId)
         {
-            UserId = userId;
+            CustomerId = customerId;
         }
     }
 }

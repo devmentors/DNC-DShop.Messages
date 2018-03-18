@@ -9,7 +9,7 @@ namespace DShop.Messages.Commands.Orders
         public Guid CustomerId { get; }
 
         [JsonConstructor]
-        private CreateOrder(Guid id, Guid customerId)
+        public CreateOrder(Guid id, Guid customerId)
         {
             Id = id;
             CustomerId = customerId;

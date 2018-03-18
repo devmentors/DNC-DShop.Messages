@@ -5,13 +5,13 @@ namespace DShop.Messages.Events.Customers
 {
     public class ProductDeletedFromCart : IEvent
     {
-        public Guid UserId { get; }
+        public Guid CustomerId { get; }
         public Guid ProductId { get; }
 
         [JsonConstructor]
-        public ProductDeletedFromCart(Guid userId, Guid productId)
+        public ProductDeletedFromCart(Guid customerId, Guid productId)
         {
-            UserId = userId;
+            CustomerId = customerId;
             ProductId = productId;
         }        
     }

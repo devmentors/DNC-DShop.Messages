@@ -8,9 +8,9 @@ namespace DShop.Messages.Commands.Orders
         public Guid Id { get; }
 
         [JsonConstructor]
-        private CancelOrder()
+        public CancelOrder(Guid id)
         {
-            Id = Id;
+            Id = id;
         }
     }
 }

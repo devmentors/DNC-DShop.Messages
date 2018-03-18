@@ -5,12 +5,12 @@ namespace DShop.Messages.Events.Customers
 {
     public class CustomerCreated : IEvent
     {
-        public Guid UserId { get;  }
+        public Guid Id { get;  }
 
         [JsonConstructor]
-        public CustomerCreated(Guid userId)
+        public CustomerCreated(Guid id)
         {
-            UserId = userId;
+            Id = id;
         }
     }
 }

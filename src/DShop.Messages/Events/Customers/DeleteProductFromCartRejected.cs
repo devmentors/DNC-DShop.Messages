@@ -5,16 +5,16 @@ namespace DShop.Messages.Events.Customers
 {
     public class DeleteProductFromCartRejected : IRejectedEvent
     {
-        public Guid UserId { get; }
+        public Guid CustomerId { get; }
         public Guid ProductId { get; }
         public string Reason { get; }
         public string Code { get; }
 
         [JsonConstructor]
-        public DeleteProductFromCartRejected(Guid userId, Guid productId,
+        public DeleteProductFromCartRejected(Guid customerId, Guid productId,
             string reason, string code)
         {
-            UserId = userId;
+            CustomerId = customerId;
             ProductId = productId;
             Reason = reason;
             Code = code;

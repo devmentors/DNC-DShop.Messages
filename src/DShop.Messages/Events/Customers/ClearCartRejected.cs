@@ -5,14 +5,14 @@ namespace DShop.Messages.Events.Customers
 {
     public class ClearCartRejected : IRejectedEvent
     {
-        public Guid UserId { get; }
+        public Guid CustomerId { get; }
         public string Reason { get; }
         public string Code { get; }
 
         [JsonConstructor]
-        public ClearCartRejected(Guid userId, string reason, string code)
+        public ClearCartRejected(Guid customerId, string reason, string code)
         {
-            UserId = userId;
+            CustomerId = customerId;
             Reason = reason;
             Code = code;
         }
